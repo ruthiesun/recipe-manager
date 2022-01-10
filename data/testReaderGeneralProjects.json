@@ -1,0 +1,67 @@
+{"projects": [
+  {
+    "working recipe": {
+      "current recipe": {
+        "instructions": [{"instruction": "boil"}],
+        "ingredients": [{
+          "unit": "cup",
+          "quantity": 1,
+          "name": "water"
+        }]
+      },
+      "new recipes": [{
+        "current recipe": {
+          "instructions": [
+            {"instruction": "boil"},
+            {"instruction": "boil again"}
+          ],
+          "ingredients": [{
+            "unit": "cup",
+            "quantity": 1,
+            "name": "water"
+          }]
+        },
+        "new recipes": []
+      }]
+    },
+    "final recipe": {
+      "instructions": [
+        {"instruction": "boil"},
+        {"instruction": "boil again"}
+      ],
+      "ingredients": [{
+        "unit": "cup",
+        "quantity": 1,
+        "name": "water"
+      }]
+    },
+    "name": "hot water"
+  },
+  {
+    "working recipe": {
+      "current recipe": {
+        "instructions": [{"instruction": "boil"}],
+        "ingredients": [{
+          "unit": "cup",
+          "quantity": 1,
+          "name": "water"
+        }]
+      },
+      "new recipes": [{
+        "current recipe": {
+          "instructions": [
+            {"instruction": "boil"},
+            {"instruction": "boil again"}
+          ],
+          "ingredients": [{
+            "unit": "cup",
+            "quantity": 1,
+            "name": "water"
+          }]
+        },
+        "new recipes": []
+      }]
+    },
+    "name": "cold water"
+  }
+]}

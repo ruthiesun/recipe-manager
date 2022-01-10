@@ -1,0 +1,146 @@
+{"projects": [
+  {
+    "working recipe": {
+      "current recipe": {
+        "instructions": [{"instruction": "boil"}],
+        "ingredients": [{
+          "unit": "cup",
+          "quantity": 1,
+          "name": "water"
+        }]
+      },
+      "new recipes": [{
+        "current recipe": {
+          "instructions": [
+            {"instruction": "boil"},
+            {"instruction": "boil again"},
+            {"instruction": "boil once again"}
+          ],
+          "ingredients": [
+            {
+              "unit": "cup",
+              "quantity": 1,
+              "name": "water"
+            },
+            {
+              "unit": "dash",
+              "quantity": 1,
+              "name": "water"
+            }
+          ]
+        },
+        "new recipes": [{
+          "current recipe": {
+            "instructions": [
+              {"instruction": "boil"},
+              {"instruction": "boil again"}
+            ],
+            "ingredients": [
+              {
+                "unit": "cup",
+                "quantity": 1,
+                "name": "water"
+              },
+              {
+                "unit": "spoonfuls",
+                "quantity": 2,
+                "name": "water"
+              }
+            ]
+          },
+          "new recipes": []
+        }]
+      }]
+    },
+    "final recipe": {
+      "instructions": [
+        {"instruction": "boil"},
+        {"instruction": "boil again"}
+      ],
+      "ingredients": [
+        {
+          "unit": "cup",
+          "quantity": 1,
+          "name": "water"
+        },
+        {
+          "unit": "spoonfuls",
+          "quantity": 2,
+          "name": "water"
+        }
+      ]
+    },
+    "name": "hot water"
+  },
+  {
+    "working recipe": {
+      "current recipe": {
+        "instructions": [{"instruction": "boil"}],
+        "ingredients": [{
+          "unit": "cup",
+          "quantity": 1,
+          "name": "water"
+        }]
+      },
+      "new recipes": [{
+        "current recipe": {
+          "instructions": [
+            {"instruction": "boil"},
+            {"instruction": "boil again"}
+          ],
+          "ingredients": [{
+            "unit": "cup",
+            "quantity": 1,
+            "name": "water"
+          }]
+        },
+        "new recipes": []
+      }]
+    },
+    "name": "cold water"
+  },
+  {
+    "working recipe": {
+      "current recipe": {
+        "instructions": [
+          {"instruction": "pour water into chili flakes"},
+          {"instruction": "boil"},
+          {"instruction": ""}
+        ],
+        "ingredients": [
+          {
+            "unit": "cup",
+            "quantity": 1,
+            "name": "water"
+          },
+          {
+            "unit": "spoon",
+            "quantity": 1,
+            "name": "chili flakes"
+          }
+        ]
+      },
+      "new recipes": []
+    },
+    "final recipe": {
+      "instructions": [
+        {"instruction": "pour water into chili flakes"},
+        {"instruction": "boil"},
+        {"instruction": ""}
+      ],
+      "ingredients": [
+        {
+          "unit": "cup",
+          "quantity": 1,
+          "name": "water"
+        },
+        {
+          "unit": "spoon",
+          "quantity": 1,
+          "name": "chili flakes"
+        }
+      ]
+    },
+    "name": "spicy water"
+  }
+]}
