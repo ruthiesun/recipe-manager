@@ -7,8 +7,6 @@
 are saved under the original recipe, forming a tree-like network of recipes. One recipe in the tree can be designated
 as the final version of the recipe.
 
-THIS IS A TEST
-
 Future goals:
 - Allowing recipe projects to be tagged (breakfast, drink, etc.)
 - Allowing the user to upload pictures for each recipe
