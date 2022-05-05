@@ -3,9 +3,8 @@
 
 **Application overview:**
 
-*Sous-Chef* is a recipe manager that allows the user to tweak recipes and record changes. Modified recipes 
-are saved under the original recipe, forming a tree-like network of recipes. One recipe in the tree can be designated
-as the final version of the recipe. This allows the user to save new versions of recipes without modifying the original recipe.
+*Sous-Chef is an organizer for culinary projects. Projects consist of recipes that are organized in a hierarchy. One recipe in the hierarchy can be designated
+as the final recipe draft for the project. This allows the user to experiment and create new versions of recipes without modifying the original recipe.
 
 Future goals:
 - Allowing recipe projects to be tagged (breakfast, drink, etc.)
