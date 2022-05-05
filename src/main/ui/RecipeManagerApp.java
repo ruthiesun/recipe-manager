@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 // The main window of the recipe manager application
 public class RecipeManagerApp extends JFrame implements ActionListener {
-    public static final int WIDTH = 300;
+    public static final int WIDTH = 700;
     public static final int HEIGHT = 600;
     public static final int TOOLBAR_HEIGHT = 30;
 
@@ -43,7 +43,7 @@ public class RecipeManagerApp extends JFrame implements ActionListener {
     // MODIFIES: this
     // EFFECTS: sets up GUI elements
     private void setup() {
-        setLayout(new BorderLayout());
+        this.setLayout(new BorderLayout());
         // The following code was adapted from stackoverflow
         // Link: https://stackoverflow.com/questions/16372241/run-function-on-jframe-close
         // Start
@@ -55,12 +55,11 @@ public class RecipeManagerApp extends JFrame implements ActionListener {
             }
         });
         // End
-
-        setLocationRelativeTo(null);
+        this.setResizable(false);
 
         loadMainMenu();
         loadProjectCollection();
-        pack();
+        refresh();
         setVisible(true);
     }
 
@@ -78,14 +77,14 @@ public class RecipeManagerApp extends JFrame implements ActionListener {
         menu.add(newButton);
         menu.add(saveButton);
         menu.add(loadButton);
-        add(menu,BorderLayout.NORTH);
+        this.add(menu,BorderLayout.NORTH);
     }
 
     // MODIFIES: this
     // EFFECTS: creates a list of the user's projects and adds it to the window
     private void loadProjectCollection() {
         projectCollectionPanel = new ProjectCollectionPanel(projects);
-        add(projectCollectionPanel,BorderLayout.LINE_START);
+        this.add(projectCollectionPanel,BorderLayout.LINE_START);
     }
 
     // EFFECTS: saves the projects to file
@@ -123,12 +122,12 @@ public class RecipeManagerApp extends JFrame implements ActionListener {
         JButton clickedButton = (JButton) actionEvent.getSource();
         if (clickedButton == newButton) {
             projectCollectionPanel.newProject(new Recipe());
-            add(projectCollectionPanel,BorderLayout.LINE_START);
+            this.add(projectCollectionPanel,BorderLayout.LINE_START);
         } else if (clickedButton == saveButton) {
             saveProjects();
         } else if (clickedButton == loadButton) {
             loadProjects();
-            remove(projectCollectionPanel);
+            this.remove(projectCollectionPanel);
             loadProjectCollection();
             refresh();
         }
@@ -137,8 +136,10 @@ public class RecipeManagerApp extends JFrame implements ActionListener {
     // MODIFIES: this
     // EFFECTS: validates and repaints this
     public void refresh() {
-        validate();
-        repaint();
+        this.pack();
+        this.validate();
+        this.repaint();
+        this.setLocationRelativeTo(null);
     }
 
     // MODIFIES: this

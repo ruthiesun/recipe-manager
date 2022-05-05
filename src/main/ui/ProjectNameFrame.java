@@ -31,14 +31,14 @@ public class ProjectNameFrame extends JFrame implements ActionListener {
         setName("Project Name");
         setLayout(new BorderLayout());
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setResizable(false);
         loadInstructions();
         loadTextField();
         loadOkButton();
         add(instructions,BorderLayout.NORTH);
         add(nameTextField,BorderLayout.CENTER);
         add(okButton,BorderLayout.SOUTH);
-        setLocationRelativeTo(null);
-        pack();
+        refresh();
         setVisible(true);
     }
 
@@ -105,7 +105,9 @@ public class ProjectNameFrame extends JFrame implements ActionListener {
     // MODIFIES: this
     // EFFECTS: validates and repaints this
     public void refresh() {
+        pack();
         validate();
         repaint();
+        setLocationRelativeTo(null);
     }
 }

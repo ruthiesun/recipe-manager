@@ -34,6 +34,7 @@ public class RecipeViewerFrame extends JFrame implements ActionListener {
         setLayout(new BorderLayout());
         setMinimumSize(new Dimension(WIDTH + 50,HEIGHT - 150));
         setLocationRelativeTo(null);
+        setResizable(false);
         loadMenu();
         loadViewingPanel();
         add(menu,BorderLayout.NORTH);
