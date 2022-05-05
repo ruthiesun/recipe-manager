@@ -3,7 +3,7 @@
 
 **Application overview:**
 
-*Sous-Chef is an organizer for culinary projects. Projects consist of recipes that are organized in a hierarchy. One recipe in the hierarchy can be designated
+*Sous-Chef* is an organizer for culinary projects. Projects consist of recipes that are organized in a hierarchy. One recipe in the hierarchy can be designated
 as the final recipe draft for the project. This allows the user to experiment and create new versions of recipes without modifying the original recipe.
 
 Future goals:
