@@ -25,7 +25,7 @@ Future goals:
 - As a user, I want to be able to reload all my previously-saved projects
 
 ## TODO
-- Apply the composite pattern to the WorkingRecipe/Recipe relationship
 - Apply the observer pattern to reduce coupling in the ui classes
   - Example: ProjectCollectionPanel is an observer of ProjectNameFrame
 - Construct an interface so that the InstructionList and IngredientList classes have a common supertype
+- Create a controller class that deals with input from the ui classes and talks to the model classes
